@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction()
+            {
+                document.getElementById("demo").innerHTML="Hello World";
+            }
+        </script>
+    </head>
+    <body>
+        
+        <button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
+        <p id="demo"></p>
+        <h1 onmouseover="style.color='red'" onmouseout="style.color='blue'">Mouse over this text</h1>
+        <p>
+                Click the button to trigger a function.
+            </p>
+            <button onclick="myFunction()">Click me</button>
+    </body>
+    <script>
+        function myFunction1()
+        {
+            alert("you pressed a key inside the input field");
+        }
+    </script>
+    <body>
+        <p>A Function is triggered when the user is pressing a key in the input field.</p>
+        <input type="text" onkeypress="myFunction1()">
+    </body>
+</html>

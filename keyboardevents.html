@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction()
+            {
+                alert("you pressed a key inside the input field");
+            }
+            function myFunction1()
+            {
+                x.style.bacground="yellow";
+            }
+            function myFunction2()
+            {
+                var x=document.getElementById("NAME");
+                x.value=x.value.toUpperCase();
+            }
+            function myFunction3()
+            {
+                alert("Welcome to my webpage");
+            }
+        </script>
+    </head>
+    <body onload="myFunction3()">
+        <p>
+            A function is triggered when the user is pressing a key in the input field.
+        </p>
+        Enter Your Name : <input type="text" id="fname" onblur="myFunction2()">
+        <input type="text" onkeypress="myFunction()" onfocus="myFunction1(this)">
+
+    </body>
+</html>
